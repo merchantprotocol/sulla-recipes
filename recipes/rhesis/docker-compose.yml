@@ -63,6 +63,7 @@ services:
     restart: unless-stopped
     ports:
       - '30361:8080'
+      - '8080:8080'
     environment:
       <<: *common-env
     depends_on:
