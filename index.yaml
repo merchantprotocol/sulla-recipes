@@ -644,3 +644,31 @@ plugins:
     short_description: Mixpost - Self-hosted social media management software (Buffer alternative).
     installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml
 
+  - slug: docker.io/sulla-ai/rhesis
+    version: 1.0.0
+    containerd_compatible: true
+    labels:
+      com.docker.desktop.extension.api.version: 0.0.1
+      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/rhesis.png
+      com.docker.extension.additional-urls: ""
+      com.docker.extension.categories: ai-ml,testing,developer-tools,quality-assurance
+      com.docker.extension.changelog: <h3>Recent Updates</h3><h4>1.0.0</h4><ul><li>Initial Sulla recipe</li><li>Full platform — backend, worker, frontend</li><li>60+ evaluation metrics</li><li>Adversarial red-teaming</li></ul>
+      com.docker.extension.detailed-description: Open-source LLM testing & evaluation platform.<br><br><strong>Rhesis AI</strong> helps you test, evaluate, and red-team your LLM and agentic applications with automated test generation, conversation simulation, and 60+ evaluation metrics.<br><br><strong>Features:</strong><ul><li>Automated test generation from natural language requirements</li><li>Single-turn and multi-turn conversation simulation</li><li>Adversarial red-teaming (jailbreak, prompt injection, PII leakage)</li><li>60+ evaluation metrics (RAGAS, DeepEval, Garak)</li><li>OpenTelemetry-based tracing</li><li>Bring your own LLM (OpenAI, Anthropic, Gemini, Ollama, etc.)</li><li>Team collaboration</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>6GB+ RAM recommended</li><li>Port 30360 available</li></ul>
+      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.screenshots: ""
+      dev.chainguard.image.title: Rhesis AI
+      org.opencontainers.image.authors: Sulla Labs
+      org.opencontainers.image.created: 2026-03-06T00:00:00Z
+      org.opencontainers.image.description: Rhesis AI - Open-source LLM testing, evaluation & red-teaming platform
+      org.opencontainers.image.licenses: ""
+      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.title: Rhesis AI
+      org.opencontainers.image.url: https://github.com/rhesis-ai/rhesis
+      org.opencontainers.image.vendor: Sulla Labs
+      org.opencontainers.image.version: 1.0.0
+    title: Rhesis AI
+    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/rhesis.png
+    publisher: Sulla Labs
+    short_description: Rhesis AI - Open-source LLM testing, evaluation & red-teaming platform.
+    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/installation.yaml
+
