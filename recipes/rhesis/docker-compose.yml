@@ -62,8 +62,7 @@ services:
     container_name: rhesis-backend
     restart: unless-stopped
     ports:
-      - '30361:8080'
-      - '8080:8080'
+      - '30364:8080'
     environment:
       <<: *common-env
     depends_on:
@@ -94,7 +93,7 @@ services:
       - NEXTAUTH_URL=http://localhost:30360
       - NEXTAUTH_SECRET={{sullaN8nEncryptionKey}}
       - NEXT_PUBLIC_API_URL=http://localhost:30361
-      - BACKEND_URL=http://rhesis-backend:8080
+      - BACKEND_URL=http://localhost:30364
     depends_on:
       - rhesis-backend
 
