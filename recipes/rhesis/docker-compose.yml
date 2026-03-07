@@ -17,9 +17,9 @@ x-common-env: &common-env
   BROKER_URL: redis://:{{sullaServicePassword}}@rhesis-redis:6379/0
   CELERY_RESULT_BACKEND: redis://:{{sullaServicePassword}}@rhesis-redis:6379/1
   FRONTEND_URL: http://localhost:30360
-  BACKEND_URL: http://rhesis-backend:30364
-  AUTH_EMAIL_PASSWORD_ENABLED: "true"
-  AUTH_REGISTRATION_ENABLED: "true"
+  BACKEND_URL: http://localhost:8080
+  AUTH_EMAIL_PASSWORD_ENABLED: "false"
+  AUTH_REGISTRATION_ENABLED: "false"
   OTEL_RHESIS_TELEMETRY_ENABLED: "false"
   RHESIS_CONNECTOR_DISABLED: "true"
 
@@ -59,10 +59,10 @@ services:
 
   rhesis-backend:
     image: manugomez95/rhesis-backend:latest
-    container_name: rhesis-backend
+    container_name: backend
     restart: unless-stopped
     ports:
-      - '30364:8080'
+      - '8080:8080'
     environment:
       <<: *common-env
     depends_on:
@@ -92,8 +92,8 @@ services:
     environment:
       - NEXTAUTH_URL=http://localhost:30360
       - NEXTAUTH_SECRET={{sullaN8nEncryptionKey}}
-      - NEXT_PUBLIC_API_URL=http://localhost:30361
-      - BACKEND_URL=http://localhost:30364
+      - NEXT_PUBLIC_API_URL=http://localhost:8080
+      - BACKEND_URL=http://localhost:8080
     depends_on:
       - rhesis-backend
 
