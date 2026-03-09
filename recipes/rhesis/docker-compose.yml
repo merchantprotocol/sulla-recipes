@@ -16,7 +16,7 @@ x-common-env: &common-env
   REDIS_URL: redis://:{{sullaServicePassword}}@rhesis-redis:6379/0
   BROKER_URL: redis://:{{sullaServicePassword}}@rhesis-redis:6379/0
   CELERY_RESULT_BACKEND: redis://:{{sullaServicePassword}}@rhesis-redis:6379/1
-  FRONTEND_URL: http://localhost:30360
+  FRONTEND_URL: http://localhost:3000
   BACKEND_URL: http://localhost:8080
   AUTH_EMAIL_PASSWORD_ENABLED: "false"
   AUTH_REGISTRATION_ENABLED: "false"
@@ -88,9 +88,9 @@ services:
     container_name: rhesis-frontend
     restart: unless-stopped
     ports:
-      - '30360:3000'
+      - '3000:3000'
     environment:
-      - NEXTAUTH_URL=http://localhost:30360
+      - NEXTAUTH_URL=http://localhost:3000
       - NEXTAUTH_SECRET={{sullaN8nEncryptionKey}}
       - NEXT_PUBLIC_API_URL=http://localhost:8080
       - BACKEND_URL=http://localhost:8080
