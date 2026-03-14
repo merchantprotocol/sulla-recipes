@@ -671,4 +671,31 @@ plugins:
     publisher: Sulla Labs
     short_description: Rhesis AI - Open-source LLM testing, evaluation & red-teaming platform.
     installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/installation.yaml
+  - slug: docker.io/sulla-ai/n8n
+    version: 2026.03
+    containerd_compatible: true
+    labels:
+      com.docker.desktop.extension.api.version: 0.0.1
+      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
+      com.docker.extension.additional-urls: ""
+      com.docker.extension.categories: automation,workflows,integrations,ai
+      com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2026.03</h4><ul><li>Visual workflow automation editor</li><li>1,000+ integration nodes</li><li>MCP (Model Context Protocol) support</li><li>REST API enabled</li><li>Dedicated PostgreSQL database</li></ul>
+      com.docker.extension.detailed-description: Open-source workflow automation tool with a visual node-based editor.<br><br><strong>n8n</strong> lets you connect APIs, services, and databases to automate workflows — no coding required. Build complex automations visually with 1,000+ integration nodes.<br><br><strong>Features:</strong><ul><li>Visual workflow builder with drag & drop</li><li>1,000+ integration nodes (Slack, Gmail, GitHub, etc.)</li><li>MCP (Model Context Protocol) for AI agent integration</li><li>Webhook triggers & scheduled executions</li><li>REST API for programmatic control</li><li>Credential encryption & management</li><li>Execution history & error handling</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>2GB+ RAM recommended</li><li>Ports 30119, 30121 available</li></ul>
+      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.screenshots: ""
+      dev.chainguard.image.title: n8n
+      org.opencontainers.image.authors: Sulla Labs
+      org.opencontainers.image.created: 2026-03-14T00:00:00Z
+      org.opencontainers.image.description: n8n - Open-source workflow automation tool with visual node-based editor
+      org.opencontainers.image.licenses: ""
+      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.title: n8n
+      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/n8n
+      org.opencontainers.image.vendor: Sulla Labs
+      org.opencontainers.image.version: 2026.03
+    title: n8n
+    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
+    publisher: Sulla Labs
+    short_description: Open-source workflow automation with 1,000+ integrations. Visual node-based editor for connecting APIs, services & databases.
+    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/installation.yaml
 

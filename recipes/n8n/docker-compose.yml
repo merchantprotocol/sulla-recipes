@@ -1,0 +1,82 @@
+services:
+  n8n-db:
+    image: postgres:16-alpine
+    container_name: sulla_n8n_db
+    ports:
+      - "30121:5432"
+    environment:
+      - POSTGRES_USER=n8n
+      - POSTGRES_PASSWORD={{sullaServicePassword}}
+      - POSTGRES_DB=n8n
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - n8n-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U n8n -d n8n"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: sulla_n8n
+    ports:
+      - "30119:5678"
+    environment:
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://127.0.0.1:30119/
+      - N8N_EDITOR_BASE_URL=http://127.0.0.1:30119/
+      - N8N_DISABLE_UI_SECURITY=true
+      - N8N_SAMESITE_COOKIE=none
+      - N8N_SECURE_COOKIE=false
+      - N8N_DISABLE_X_FRAME_OPTIONS=true
+      - N8N_INSECURE_DISABLE_WEBHOOK_IFRAME_SANDBOX=true
+      - N8N_REST_API_ENABLED=true
+      - N8N_FEATURE_FLAG_MCP=true
+      - EXECUTIONS_MODE=regular
+      - QUEUE_BULL_REDIS_HOST=host.docker.internal
+      - QUEUE_BULL_REDIS_PORT=30117
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=n8n-db
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=n8n
+      - DB_POSTGRESDB_USER=n8n
+      - DB_POSTGRESDB_PASSWORD={{sullaServicePassword}}
+      - N8N_ENCRYPTION_KEY={{sullaN8nEncryptionKey}}
+      - N8N_BASIC_AUTH_ACTIVE=false
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_TELEMETRY_ENABLED=false
+      - N8N_USER_MANAGEMENT_JWT_SECRET={{sullaN8nEncryptionKey|md5}}
+      - N8N_VERSION_NOTIFICATIONS_ENABLED=false
+    depends_on:
+      n8n-db:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5678/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  n8n-db-migrate:
+    image: postgres:16-alpine
+    container_name: sulla_n8n_db_migrate
+    restart: "no"
+    depends_on:
+      n8n:
+        condition: service_healthy
+    environment:
+      - PGHOST=n8n-db
+      - PGPORT=5432
+      - PGUSER=n8n
+      - PGPASSWORD={{sullaServicePassword}}
+      - PGDATABASE=n8n
+    volumes:
+      - ./migrations/post-server-migration.sql:/migrations/post-server-migration.sql:ro
+    entrypoint: ["sh", "-c", "until pg_isready; do sleep 2; done; psql -v ON_ERROR_STOP=1 -f /migrations/post-server-migration.sql"]
+
+volumes:
+  n8n-db-data:
