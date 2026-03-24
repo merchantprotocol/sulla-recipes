@@ -28,3 +28,8 @@ extraUrls:
 
 env:
   N8N_ENCRYPTION_KEY: "{{sullaN8nEncryptionKey}}"
+
+integrations:
+  n8n:
+    N8N_API_KEY: "{{sullaN8nApiKey}}"
+    BASE_URL: "http://localhost:30119"

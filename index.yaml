@@ -1,125 +1,125 @@
 version: "1"
 generated_at: ""
 plugins:
-  - slug: docker.io/sulla-ai/plane
+  - slug: docker.io/merchantprotocol/plane
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plane/plane.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plane/plane.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: project-management,productivity,team,business
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved issue views & filters</li><li>Better AI assistance</li><li>Enhanced cycle & module management</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI overhaul</li><li>New analytics dashboard</li><li>Advanced permissions system</li></ul>
       com.docker.extension.detailed-description: Open-source project management.<br><br><strong>Plane</strong> is a beautiful, fast, and powerful alternative to Jira, Linear, and Monday.com. Built for modern teams who want full control over their data.<br><br><strong>Features:</strong><ul><li>Beautiful issue tracking</li><li>Cycles, Modules & Roadmaps</li><li>AI-powered assistance</li><li>Real-time collaboration</li><li>Powerful views (List, Kanban, Calendar, Spreadsheet)</li><li>Integrations & API</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>6GB+ RAM recommended</li><li>Port 30270 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Plane
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Plane - Open-source project management tool (Jira / Linear alternative)
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Plane
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/plane
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/plane
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Plane
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plane/plane.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plane/plane.png
     publisher: Sulla Labs
     short_description: Beautiful open-source project management. The best Jira / Linear alternative.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plane/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plane/installation.yaml
 
-  - slug: docker.io/sulla-ai/novu
+  - slug: docker.io/merchantprotocol/novu
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/novu/novu.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/novu/novu.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: notifications,developer-tools,automation,marketing
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved email & SMS providers</li><li>Better activity feed</li><li>Enhanced webhook support</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major performance improvements</li><li>New in-app notifications UI</li><li>Advanced analytics</li></ul>
       com.docker.extension.detailed-description: The open-source notification infrastructure.<br><br><strong>Novu</strong> lets you send emails, SMS, push notifications, in-app messages, and chat messages from one unified API with a beautiful dashboard.<br><br>Perfect replacement for OneSignal, Twilio Notify, SendGrid, etc.<br><br><strong>Features:</strong><ul><li>Unified API for all notification channels</li><li>Beautiful activity feed & analytics</li><li>In-app notifications with bells</li><li>Email, SMS, Push, Chat, Webhook</li><li>Powerful templates & variables</li><li>Subscriber management</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30250 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Novu
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Novu - Open-source notification infrastructure
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Novu
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/novu
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/novu
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Novu
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/novu/novu.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/novu/novu.png
     publisher: Sulla Labs
     short_description: Novu - Open-source notification infrastructure. Send emails, SMS, push & in-app messages from one dashboard.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/novu/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/novu/installation.yaml
   
-  - slug: docker.io/sulla-ai/postiz
+  - slug: docker.io/merchantprotocol/postiz
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/postiz/postiz.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/postiz/postiz.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: social-media,scheduling,marketing,automation
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved AI content generation</li><li>Better analytics dashboard</li><li>Added Bluesky & Threads support</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major performance upgrades</li><li>New bulk scheduling tools</li><li>Enhanced team collaboration</li></ul>
       com.docker.extension.detailed-description: AI-powered social media scheduling.<br><br><strong>Postiz</strong> is a beautiful, self-hosted social media management tool that lets you schedule posts across X, LinkedIn, Instagram, TikTok, Facebook, Threads, Bluesky, YouTube and more.<br><br>With built-in AI content creation and analytics — all running privately on your own machine.<br><br><strong>Features:</strong><ul><li>Schedule to 15+ social platforms</li><li>AI content writer & image generator</li><li>Analytics & performance tracking</li><li>Team collaboration</li><li>Auto-posting rules</li><li>Beautiful modern interface</li><li>100% self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30240 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Postiz
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Postiz - Self-hosted AI social media scheduler
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Postiz
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/postiz
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/postiz
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Postiz
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/postiz/postiz.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/postiz/postiz.svg
     publisher: Sulla Labs
     short_description: Postiz - Self-hosted AI-powered social media scheduler. Post to X, LinkedIn, Instagram, TikTok and more.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/postiz/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/postiz/installation.yaml
     
-  - slug: docker.io/sulla-ai/nextcloud
+  - slug: docker.io/merchantprotocol/nextcloud
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/nextcloud/nextcloud.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/nextcloud/nextcloud.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: cloud,storage,productivity,collaboration,office
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved performance & stability</li><li>Better mobile sync</li><li>Enhanced Office integration</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI refresh</li><li>New collaborative editing features</li><li>Advanced admin dashboard</li></ul>
       com.docker.extension.detailed-description: Your own private cloud.<br><br><strong>Nextcloud </strong> is the most popular open-source alternative to Dropbox, Google Drive, OneDrive, and Office 365.<br><br>Store files, sync across devices, collaborate in real-time, manage calendar, contacts, notes, and more — all running on your own machine with full privacy.<br><br><strong>Features:</strong><ul><li>File sync & share (like Dropbox)</li><li>Real-time collaborative editing (like Google Docs)</li><li>Calendar, Contacts & Mail</li><li>Notes, Tasks & Deck (Kanban)</li><li>Photo gallery & video streaming</li><li>End-to-end encryption option</li><li>Powerful mobile apps</li><li>Thousands of apps available</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>8GB+ RAM recommended</li><li>Port 30220 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Nextcloud
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Nextcloud  - Your private cloud platform (Dropbox + Office 365 alternative)
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Nextcloud 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/nextcloud
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/nextcloud
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Nextcloud
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/nextcloud/nextcloud.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/nextcloud/nextcloud.png
     publisher: Sulla Labs
     short_description: Your own private cloud with file sync, calendar, notes, and collaboration.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/nextcloud/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/nextcloud/installation.yaml
   
 
-  - slug: docker.io/sulla-ai/voice-ai
+  - slug: docker.io/merchantprotocol/voice-ai
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.desktop.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-desktop/main/pkg/rancher-desktop/assets/images/voice-ai.svg
+      com.docker.desktop.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-desktop/main/pkg/rancher-desktop/assets/images/voice-ai.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: development,utility-tools
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days
@@ -147,7 +147,7 @@ plugins:
         data</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop
         v1.0.0+</li><li>Microphone access</li><li>2GB RAM minimum</li><li>Internet
         connection</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/voice-ai
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/voice-ai
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: AI Voice Receptionist
       dev.chainguard.package.main: ""
@@ -156,19 +156,19 @@ plugins:
       org.opencontainers.image.description: AI Voice Receptionist  -
         Transform your Sulla Desktop into a professional AI receptionist
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/voice-ai
+      org.opencontainers.image.source: https://github.com/merchantprotocol/voice-ai
       org.opencontainers.image.title: AI Voice Receptionist 
       org.opencontainers.image.url: https://hub.docker.com/r/alancarvalho/voice-ai
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: AI Voice Receptionist 
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-desktop/main/pkg/rancher-desktop/assets/images/voice-ai.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-desktop/main/pkg/rancher-desktop/assets/images/voice-ai.svg
     publisher: Sulla Labs
     short_description: AI Voice Receptionist  - Transform your Sulla
       Desktop into a professional AI receptionist
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/voice-ai/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/voice-ai/installation.yaml
 
-  - slug: docker.io/sulla-ai/twenty
+  - slug: docker.io/merchantprotocol/twenty
     version: 2.1.0
     containerd_compatible: true
     labels:
@@ -178,53 +178,53 @@ plugins:
       com.docker.extension.categories: crm,business,productivity,sales
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved pipeline & activity views</li><li>Better mobile experience</li><li>Enhanced search & filtering</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI overhaul</li><li>Full calendar integration</li><li>Advanced permissions system</li></ul>
       com.docker.extension.detailed-description: The modern open-source CRM.<br><br><strong>Twenty </strong> is a beautiful, powerful, self-hosted CRM that feels like a mix of Notion + Linear + Salesforce — but fully private and open source.<br><br>Perfect for teams who want full control over their customer data without paying huge SaaS fees.<br><br><strong>Features:</strong><ul><li>Beautiful modern UI (Notion-style)</li><li>Powerful pipelines & deal tracking</li><li>Activities, tasks & notes</li><li>Calendar & email integration</li><li>Companies, people & opportunities</li><li>Full-text search & filters</li><li>Team workspaces & permissions</li><li>Self-hosted — your data stays yours</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30207 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Twenty CRM
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Twenty  - Beautiful open-source CRM. Private alternative to Salesforce & HubSpot.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Twenty CRM 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/twenty
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/twenty
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Twenty CRM 
     logo: https://github.com/twentyhq/twenty/raw/main/packages/twenty-website/public/images/core/logo.svg
     publisher: Sulla Labs
     short_description: Twenty CRM  - Beautiful modern open-source CRM. Full control over your customer data.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/twenty/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/twenty/installation.yaml
     
-  - slug: docker.io/sulla-ai/poste-io
+  - slug: docker.io/merchantprotocol/poste-io
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/poste-io/poste-io.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/poste-io/poste-io.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: email,communication,productivity,server
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Updated Roundcube & Rspamd</li><li>Improved Let's Encrypt handling</li><li>Better mobile webmail experience</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major performance improvements</li><li>New admin dashboard widgets</li><li>Enhanced security defaults</li></ul>
       com.docker.extension.detailed-description: The easiest way to run your own professional email server.<br><br><strong>Poste.io </strong> is a clean, all-in-one Docker mail server that gives you everything Google Workspace or Microsoft 365 offers — but 100% private and self-hosted.<br><br>Includes Roundcube webmail, powerful admin panel, Rspamd anti-spam, ClamAV antivirus, automatic Let's Encrypt SSL, and full IMAP/SMTP support.<br><br><strong>Features:</strong><ul><li>Beautiful Roundcube webmail (mobile-friendly)</li><li>Easy web-based admin panel</li><li>Built-in Rspamd + ClamAV protection</li><li>Automatic Let's Encrypt certificates</li><li>Unlimited domains, mailboxes & aliases</li><li>DKIM, SPF, DMARC, and ARC support</li><li>CalDAV & CardDAV sync</li><li>One-click backups & restore</li><li>Zero data leaves your machine</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>Your own domain name</li><li>4GB+ RAM recommended</li><li>Ports 25, 80, 443, 465, 587, 993 open</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Poste.io Mail Server
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Poste.io  - Simple all-in-one self-hosted mail server with webmail and full privacy
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Poste.io 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/poste-io
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/poste-io
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Poste.io E-mail
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/poste-io/poste-io.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/poste-io/poste-io.png
     publisher: Sulla Labs
     short_description: Poste.io  - Simple all-in-one self-hosted mail server with beautiful webmail. Private alternative to Google Workspace.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/poste-io/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/poste-io/installation.yaml
 
-  - slug: docker.io/sulla-ai/stalwart
+  - slug: docker.io/merchantprotocol/stalwart
     version: 2.1.0
     containerd_compatible: true
     labels:
@@ -234,53 +234,53 @@ plugins:
       com.docker.extension.categories: email,communication,productivity,server
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved JMAP performance</li><li>Better mobile webmail experience</li><li>Enhanced security defaults</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI overhaul</li><li>Full CalDAV & CardDAV support</li><li>Enterprise-ready features</li></ul>
       com.docker.extension.detailed-description: The modern, secure, high-performance mail & collaboration server.<br><br><strong>Stalwart </strong> is a next-generation, Rust-based mail server that supports JMAP, IMAP, SMTP, CalDAV, CardDAV, and WebDAV — all in one clean, lightweight package.<br><br>Built for privacy and performance. No legacy bloat. Perfect for users who want a powerful self-hosted email + calendar solution.<br><br><strong>Features:</strong><ul><li>Modern JMAP protocol (future of email)</li><li>Full IMAP/SMTP with excellent compatibility</li><li>Built-in CalDAV & CardDAV (calendar + contacts)</li><li>Beautiful web admin panel</li><li>Webmail client included</li><li>Advanced anti-spam & security</li><li>Extremely fast and lightweight (Rust)</li><li>Automatic config generation</li><li>Zero data leaves your machine</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>Your own domain (optional for local use)</li><li>2GB+ RAM recommended</li><li>Ports 25, 143, 993, 587, 465, 8080 open</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Stalwart Mail Server
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Stalwart  - Modern Rust-based mail & collaboration server (JMAP + IMAP + CalDAV)
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Stalwart 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/stalwart
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/stalwart
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Stalwart 
     logo: https://raw.githubusercontent.com/stalwartlabs/stalwart/main/img/logo-red.svg
     publisher: Sulla Labs
     short_description: Stalwart  - Modern, fast, Rust-based mail & collaboration server with JMAP, IMAP, and calendar support.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/stalwart/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/stalwart/installation.yaml
 
-  - slug: docker.io/sulla-ai/plex
+  - slug: docker.io/merchantprotocol/plex
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plex/plex.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plex/plex.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: media,entertainment,streaming
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Updated to latest Plex Media Server</li><li>Improved hardware transcoding support</li><li>Better subtitle handling</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major performance improvements</li><li>New dashboard widgets</li><li>Enhanced remote access</li></ul>
       com.docker.extension.detailed-description: Your personal media server.<br><br><strong>Plex </strong> turns your media collection into a beautiful, Netflix-style streaming service that works on every device — phones, TVs, computers, tablets.<br><br>Stream your movies, TV shows, music, and photos with powerful transcoding, subtitles, and remote access.<br><br><strong>Features:</strong><ul><li>Beautiful modern interface</li><li>Hardware-accelerated transcoding</li><li>Live TV & DVR (with tuner)</li><li>Powerful media library management</li><li>Sync & offline playback</li><li>Shared libraries with friends/family</li><li>Works on all your devices</li><li>Zero data leaves your machine</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Good CPU/GPU for transcoding</li><li>Port 30210 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Plex Media Server
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Plex  - Your personal media streaming server
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Plex Media Server 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/plex
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/plex
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Plex Media Server 
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plex/plex.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plex/plex.png
     publisher: Sulla Labs
     short_description: Plex  - Turn your media collection into a beautiful streaming service for all your devices.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/plex/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/plex/installation.yaml
 
-  - slug: docker.io/sulla-ai/immich
+  - slug: docker.io/merchantprotocol/immich
     version: 2.1.0
     containerd_compatible: true
     labels:
@@ -290,25 +290,25 @@ plugins:
       com.docker.extension.categories: media,photos,backup,privacy
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved mobile backup speed</li><li>Better AI search & face recognition</li><li>Enhanced timeline view</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major performance upgrades</li><li>New sharing features</li><li>Advanced metadata editing</li></ul>
       com.docker.extension.detailed-description: Your private Google Photos replacement.<br><br><strong>Immich </strong> is a high-performance, self-hosted photo and video backup solution that gives you full ownership of your memories.<br><br>Automatic phone backups, beautiful timeline, powerful AI search, facial recognition, and albums — all running on your own machine.<br><br><strong>Features:</strong><ul><li>Automatic phone backup (iOS & Android)</li><li>Beautiful timeline & album views</li><li>AI-powered search & facial recognition</li><li>Shared albums & partner sharing</li><li>Full-resolution original backups</li><li>Live photos & video support</li><li>Zero data leaves your machine</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>8GB+ RAM recommended (for AI features)</li><li>Port 30211 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Immich
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Immich  - Self-hosted Google Photos alternative with automatic phone backup
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Immich 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/immich
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/immich
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Immich 
     logo: https://github.com/immich-app/immich/raw/main/design/immich-logo-stacked-light.svg
     publisher: Sulla Labs
     short_description: Immich  - Private Google Photos alternative with automatic phone backup and AI search.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/immich/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/immich/installation.yaml
     
-  - slug: docker.io/sulla-ai/stirling-pdf
+  - slug: docker.io/merchantprotocol/stirling-pdf
     version: 2.1.0
     containerd_compatible: true
     labels:
@@ -318,109 +318,109 @@ plugins:
       com.docker.extension.categories: productivity,documents,utilities
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved OCR accuracy</li><li>Faster PDF compression</li><li>Dark mode fixes & mobile improvements</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Complete UI overhaul</li><li>New AI-powered features</li><li>Enterprise security hardening</li></ul>
       com.docker.extension.detailed-description: The #1 open-source PDF tool on GitHub. <strong>Stirling-PDF </strong> gives you a full Adobe Acrobat replacement that runs 100% locally in your browser — no uploads, no limits, no subscriptions.<br><br>Edit, merge, split, convert, compress, sign, OCR, watermark, rotate, and do dozens more operations on PDFs instantly and privately.<br><br><strong>Features:</strong><ul><li>Merge, split, rotate & reorder pages</li><li>Compress & optimize PDFs dramatically</li><li>OCR on scanned documents</li><li>Digital signatures & certificates</li><li>Convert to/from Word, Excel, images, etc.</li><li>Add/remove watermarks & stamps</li><li>Redact sensitive information</li><li>Beautiful modern web UI (mobile friendly)</li><li>Dark mode + customizable</li><li>Zero data leaves your machine</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>1GB+ RAM recommended</li><li>Port 8080 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Stirling-PDF
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Stirling-PDF  - Local PDF editor, merger, converter & toolbox. Replace Adobe forever.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Stirling-PDF 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/stirling-pdf
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/stirling-pdf
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Stirling-PDF 
     logo: https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/docs/stirling.svg
     publisher: Sulla Labs
     short_description: Stirling-PDF  - Full-featured local PDF editor, merger, converter & toolbox. Adobe replacement that stays private.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/stirling-pdf/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/stirling-pdf/installation.yaml
       
-  - slug: docker.io/sulla-ai/home-assistant
+  - slug: docker.io/merchantprotocol/home-assistant
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/home-assistant/smartthings.avif
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/home-assistant/smartthings.avif
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: smart-home,automation,iot,home
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved Matter & Thread support</li><li>Better energy dashboard</li><li>Enhanced mobile app integration</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI refresh</li><li>New voice assistant features</li><li>Advanced automation editor</li></ul>
       com.docker.extension.detailed-description: The #1 open-source smart home platform.<br><br><strong>Home Assistant </strong> is the most powerful way to take back control of your smart home. It works with thousands of devices (including SmartThings, Philips Hue, Zigbee, Z-Wave, Matter, etc.) and runs completely locally.<br><br><strong>Features:</strong><ul><li>Beautiful dashboard & mobile apps</li><li>Powerful automations & scripts</li><li>Works with SmartThings devices</li><li>Voice control (Alexa/Google compatible)</li><li>Energy monitoring & solar integration</li><li>Camera & security support</li><li>100% local & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30215 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Home Assistant
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Home Assistant  - The best open-source smart home platform (SmartThings replacement)
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Home Assistant 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/home-assistant
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/home-assistant
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Home Assistant 
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/home-assistant/smartthings.avif
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/home-assistant/smartthings.avif
     publisher: Sulla Labs
     short_description: Home Assistant  - The ultimate open-source smart home platform. Full local control and SmartThings integration.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/home-assistant/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/home-assistant/installation.yaml
 
-  - slug: docker.io/sulla-ai/erpnext
+  - slug: docker.io/merchantprotocol/erpnext
     version: 2026.02
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/erpnext/erpnext.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/erpnext/erpnext.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: business,erp,crm,productivity,enterprise
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2026.02 (Latest)</h4><ul><li>ERPNext v15 with MariaDB and Redis</li><li>Complete ERP and CRM functionality</li><li>Multi-service architecture with health checks</li><li>Persistent data volumes</li></ul>
       com.docker.extension.detailed-description: Complete business management solution with ERP and CRM capabilities.<br><br><strong>ERPNext</strong> is a comprehensive open-source ERP and CRM platform that includes accounting, inventory, HR, CRM, manufacturing, and more — all in one integrated system.<br><br><strong>Features:</strong><ul><li>Complete ERP functionality (accounting, inventory, manufacturing)</li><li>CRM with leads, opportunities, and customer management</li><li>HR management and payroll</li><li>Project management and timesheets</li><li>E-commerce integration</li><li>RESTful API and custom apps</li><li>Multi-company and multi-currency support</li><li>Self-hosted & privacy-focused</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>8GB+ RAM recommended (for full functionality)</li><li>Ports 30280 available</li><li>MariaDB and Redis included</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: ERPNext
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: ERPNext - Complete open-source ERP and CRM platform
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: ERPNext
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/erpnext
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/erpnext
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2026.02
     title: ERPNext
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/erpnext/erpnext.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/erpnext/erpnext.svg
     publisher: Sulla Labs
     short_description: ERPNext - Complete open-source ERP and CRM platform for business management.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/erpnext/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/erpnext/installation.yaml
 
-  - slug: docker.io/sulla-ai/vaultwarden
+  - slug: docker.io/merchantprotocol/vaultwarden
     version: 2.1.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/vaultwarden/vaultwarden.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/vaultwarden/vaultwarden.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: security,password,privacy
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.1.0 (2 days ago)</h4><ul><li>Improved performance</li><li>Better mobile app support</li><li>Enhanced security defaults</li></ul><h4>2.0.0 (3 weeks ago)</h4><ul><li>Major UI improvements</li><li>New admin dashboard</li><li>Better 2FA support</li></ul>
       com.docker.extension.detailed-description: Your own private password manager.<br><br><strong>Vaultwarden</strong> is a lightweight, self-hosted version of Bitwarden. It gives you full control of your passwords, passkeys, and secure notes with zero monthly fees.<br><br>Works perfectly with the official Bitwarden mobile apps and browser extensions.<br><br><strong>Features:</strong><ul><li>Unlimited passwords & secure notes</li><li>Passkeys & TOTP 2FA support</li><li>Browser extensions & mobile apps</li><li>End-to-end encryption</li><li>Admin panel for family/team management</li><li>Completely free & self-hosted</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>1GB+ RAM recommended</li><li>Port 30230 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Vaultwarden
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Vaultwarden - Self-hosted Bitwarden compatible password manager
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Vaultwarden
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/vaultwarden
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/vaultwarden
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.1.0
     title: Vaultwarden
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/vaultwarden/vaultwarden.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/vaultwarden/vaultwarden.png
     publisher: Sulla Labs
     short_description: Vaultwarden - Self-hosted Bitwarden compatible password manager. Free & private.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/vaultwarden/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/vaultwarden/installation.yaml
 
-  - slug: docker.io/sulla-ai/chatwoot
+  - slug: docker.io/merchantprotocol/chatwoot
     version: 4.0.0
     containerd_compatible: true
     labels:
@@ -430,25 +430,25 @@ plugins:
       com.docker.extension.categories: support,customer-engagement,live-chat,messaging
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>4.0.0</h4><ul><li>New dashboard UI</li><li>Linear integration</li><li>Improved automation rules</li></ul>
       com.docker.extension.detailed-description: Open-source customer engagement suite.<br><br><strong>Chatwoot </strong> is a powerful, self-hosted alternative to Intercom, Zendesk, and Freshdesk — manage all your customer conversations from one place.<br><br><strong>Features:</strong><ul><li>Live chat widget for websites</li><li>Omnichannel — email, WhatsApp, Facebook, Twitter, Telegram, Line, SMS</li><li>Team collaboration & assignments</li><li>Canned responses & automation rules</li><li>Contact management & segmentation</li><li>Reports & analytics</li><li>Custom attributes & labels</li><li>Webhooks & API integrations</li><li>Self-hosted — your data stays yours</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30290 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Chatwoot
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: Chatwoot  - Open-source customer engagement suite. Private alternative to Intercom & Zendesk.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Chatwoot 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/chatwoot
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/chatwoot
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 4.0.0
     title: Chatwoot 
     logo: https://raw.githubusercontent.com/chatwoot/chatwoot/develop/public/brand-assets/logo.svg
     publisher: Sulla Labs
     short_description: Chatwoot  - Open-source customer engagement suite. Manage all customer conversations in one place.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/chatwoot/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/chatwoot/installation.yaml
 
-  - slug: docker.io/sulla-ai/affine
+  - slug: docker.io/merchantprotocol/affine
     version: 0.19.0
     containerd_compatible: true
     labels:
@@ -458,25 +458,25 @@ plugins:
       com.docker.extension.categories: productivity,knowledge-base,collaboration,documents,whiteboard
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>0.19.0</h4><ul><li>Improved block editor performance</li><li>New whiteboard features</li><li>Better collaboration & sync</li></ul>
       com.docker.extension.detailed-description: Open-source Notion + Miro alternative.<br><br><strong>AFFiNE </strong> is a next-gen knowledge base that brings docs, whiteboards, and databases together in one beautiful workspace — fully self-hosted and private.<br><br><strong>Features:</strong><ul><li>Rich block-based editor (like Notion)</li><li>Infinite canvas whiteboard (like Miro)</li><li>Kanban boards & task management</li><li>Real-time collaboration</li><li>Offline-first with local storage</li><li>Markdown support & export</li><li>Beautiful modern UI</li><li>Self-hosted — your data stays yours</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30295 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: AFFiNE
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: AFFiNE  - Open-source Notion + Miro alternative. Docs, whiteboards & databases in one workspace.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: AFFiNE 
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/affine
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/affine
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 0.19.0
     title: AFFiNE 
     logo: https://raw.githubusercontent.com/toeverything/AFFiNE/canary/packages/frontend/core/public/favicon-192.png
     publisher: Sulla Labs
     short_description: AFFiNE  - Open-source Notion + Miro alternative. Docs, whiteboards & databases in one workspace.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/affine/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/affine/installation.yaml
 
-  - slug: docker.io/sulla-ai/wordpress
+  - slug: docker.io/merchantprotocol/wordpress
     version: 6.7.0
     containerd_compatible: true
     labels:
@@ -486,216 +486,189 @@ plugins:
       com.docker.extension.categories: cms,website,blog,ecommerce
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>6.7.0</h4><ul><li>New default theme</li><li>Block editor improvements</li><li>Performance enhancements</li></ul>
       com.docker.extension.detailed-description: The world's most popular open-source CMS.<br><br><strong>WordPress </strong> lets you build websites, blogs, and online stores — fully self-hosted and private.<br><br><strong>Features:</strong><ul><li>Block editor (Gutenberg)</li><li>Thousands of themes & plugins</li><li>WooCommerce for ecommerce</li><li>SEO-friendly out of the box</li><li>Multi-user & role management</li><li>REST API & headless support</li><li>Media library & file management</li><li>Self-hosted — your data stays yours</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>2GB+ RAM recommended</li><li>Port 30300 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: WordPress
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-27T00:00:00Z
       org.opencontainers.image.description: WordPress  - The world's most popular open-source CMS. Build websites, blogs & online stores.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: WordPress
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/wordpress
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/wordpress
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 6.7.0
     title: WordPress
     logo: https://s.w.org/style/images/about/WordPress-logotype-wmark.png
     publisher: Sulla Labs
     short_description: WordPress  - The world's most popular open-source CMS. Build websites, blogs & online stores.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/wordpress/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/wordpress/installation.yaml
 
-  - slug: docker.io/sulla-ai/windmill
+  - slug: docker.io/merchantprotocol/windmill
     version: 2026.02
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/windmill/windmill.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/windmill/windmill.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: automation,developer-tools,workflows,scripts
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2026.02</h4><ul><li>TypeScript, Python, Go, Bash, SQL & Rust scripts</li><li>Visual workflow builder</li><li>App builder for internal UIs</li><li>Schedules, webhooks & triggers</li></ul>
       com.docker.extension.detailed-description: Open-source developer platform for scripts, workflows & UIs.<br><br><strong>Windmill</strong> is a powerful, self-hosted alternative to Retool, n8n, Airflow, and Temporal — build endpoints, workflows, and internal tools with code in TypeScript, Python, Go, PHP, Bash, SQL, C#, Rust, or any Docker image.<br><br><strong>Features:</strong><ul><li>Scripts in TypeScript, Python, Go, Bash, SQL, Rust & more</li><li>Visual flow builder with branching & loops</li><li>App builder for internal UIs (drag & drop)</li><li>Schedules, webhooks & event triggers</li><li>Variables, secrets & resource management</li><li>Audit logs & version control (Git sync)</li><li>Worker groups & job queues</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30130 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Windmill
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-28T00:00:00Z
       org.opencontainers.image.description: Windmill - Open-source developer platform for scripts, workflows & UIs
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Windmill
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/windmill
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/windmill
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2026.02
     title: Windmill
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/windmill/windmill.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/windmill/windmill.svg
     publisher: Sulla Labs
     short_description: Add 1,400+ integrations to your agent. - Open-source developer platform for scripts, workflows & UIs. Self-hosted Retool + Airflow alternative.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/windmill/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/windmill/installation.yaml
 
-  - slug: docker.io/sulla-ai/polymarket-trading-bot
+  - slug: docker.io/merchantprotocol/polymarket-trading-bot
     version: 1.0.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/polymarket-trading-bot.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/polymarket-trading-bot.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: finance,trading,cryptocurrency,automation
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>1.0.0</h4><ul><li>7 automated trading strategies</li><li>Whale tracker with copy-trade simulator</li><li>Real-time dashboard</li><li>Paper trading mode by default</li></ul>
       com.docker.extension.detailed-description: The most advanced open-source automated trading platform for Polymarket prediction markets.<br><br><strong>Polymarket Trading Bot</strong> runs 7 concurrent strategies — from cross-market arbitrage to AI-driven forecasting — each isolated in its own wallet with independent capital, risk limits, and execution modes (LIVE or PAPER).<br><br><strong>Features:</strong><ul><li>Cross-market and mispricing arbitrage</li><li>High-probability convergence strategy</li><li>Market making (spread capture)</li><li>Momentum following</li><li>AI forecast with web research</li><li>Whale tracking, scoring, and copy-trade simulator</li><li>Real-time dashboard with live trades</li><li>Paper trading mode — safe by default</li><li>Independent wallets with risk limits</li><li>Zero external services — SQLite built-in</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>2GB+ RAM recommended</li><li>Port 30330 available</li><li>Internet connection for market data</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Polymarket Trading Bot
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-03-01T00:00:00Z
       org.opencontainers.image.description: Polymarket Trading Bot - Automated prediction market trading with 7 strategies and real-time dashboard
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Polymarket Trading Bot
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/polymarket-trading-bot
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/polymarket-trading-bot
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 1.0.0
     title: Polymarket Trading Bot
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/polymarket-trading-bot.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/polymarket-trading-bot.png
     publisher: Sulla Labs
     short_description: Polymarket Trading Bot - Automated prediction market trading with 7 strategies, whale tracker, and real-time dashboard.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/polymarket-trading-bot/installation.yaml
 
-  - slug: docker.io/sulla-ai/btcpayserver
+  - slug: docker.io/merchantprotocol/btcpayserver
     version: 2.0.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/btcpayserver/btcpayserver.png
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/btcpayserver/btcpayserver.png
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: finance,payments,bitcoin,cryptocurrency
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2.0.0</h4><ul><li>Full Docker Compose recipe with Bitcoin Core, NBXplorer, and PostgreSQL</li><li>Regtest mode by default for easy local development</li><li>Switch to mainnet/testnet via environment variable</li></ul>
       com.docker.extension.detailed-description: Accept Bitcoin payments with no fees, no middlemen, and complete privacy.<br><br><strong>BTCPay Server</strong> is a self-hosted, open-source cryptocurrency payment processor. It is secure, private, censorship-resistant, and free — the most widely used self-hosted Bitcoin payment gateway in the world.<br><br><strong>Features:</strong><ul><li>Accept Bitcoin on-chain and Lightning Network payments</li><li>No fees, no intermediaries — peer-to-peer</li><li>Built-in wallet with full coin control</li><li>Point-of-sale app for in-person payments</li><li>Crowdfunding and payment button support</li><li>WooCommerce, Shopify, and API integrations</li><li>Invoice management and payment requests</li><li>Multi-store and multi-user support</li><li>Automatic currency conversion and rates</li><li>Beautiful admin dashboard with reporting</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30320 available</li><li>~1GB disk for pruned Bitcoin node</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: BTCPay Server
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-03-01T00:00:00Z
       org.opencontainers.image.description: BTCPay Server - Self-hosted Bitcoin payment processor with no fees and complete privacy
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: BTCPay Server
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/btcpayserver
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/btcpayserver
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2.0.0
     title: BTCPay Server
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/btcpayserver/btcpayserver.png
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/btcpayserver/btcpayserver.png
     publisher: Sulla Labs
     short_description: BTCPay Server - Self-hosted Bitcoin payment processor. Accept payments with no fees, no middlemen.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/btcpayserver/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/btcpayserver/installation.yaml
 
-  - slug: docker.io/sulla-ai/remotion
+  - slug: docker.io/merchantprotocol/remotion
     version: 2026.02
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/remotion/remotion.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/remotion/remotion.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: media,video,developer-tools,creative
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2026.02</h4><ul><li>React-powered video composition</li><li>Built-in Studio with live preview</li><li>Server-side rendering to MP4, WebM, GIF</li><li>Parametric video templates</li></ul>
       com.docker.extension.detailed-description: Make videos programmatically with React.<br><br><strong>Remotion</strong> is an open-source framework (38k+ GitHub stars) that lets you create real MP4 videos using React components. The self-hosted Studio gives your team a visual editor for composing, previewing, and rendering videos — all running locally on your machine.<br><br><strong>Features:</strong><ul><li>Write videos in React with full CSS, Canvas, SVG & WebGL</li><li>Beautiful Studio UI with live preview & timeline</li><li>Render to MP4, WebM, GIF, PNG sequences & more</li><li>Parametric templates — pass data as props</li><li>Server-side rendering API for automation</li><li>Use any npm package, font, or asset</li><li>Composition-based architecture</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30310 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Remotion
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-02-28T00:00:00Z
       org.opencontainers.image.description: Remotion - Make videos programmatically with React. Self-hosted Studio for video composition & rendering.
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Remotion
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/remotion
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/remotion
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2026.02
     title: Remotion
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/remotion/remotion.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/remotion/remotion.svg
     publisher: Sulla Labs
     short_description: Remotion - Make videos programmatically with React. Self-hosted Studio for composing, previewing & rendering MP4 videos.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/remotion/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/remotion/installation.yaml
 
-  - slug: docker.io/sulla-ai/mixpost
+  - slug: docker.io/merchantprotocol/mixpost
     version: 1.0.0
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: social-media,marketing,automation,productivity
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>1.0.0</h4><ul><li>Official Mixpost Lite Docker setup</li><li>MySQL and Redis included</li><li>Persistent storage for app data and logs</li></ul>
       com.docker.extension.detailed-description: Mixpost is a self-hosted social media management platform that helps you create, schedule, publish, and manage content across multiple social networks.<br><br><strong>Features:</strong><ul><li>Schedule and publish posts from one dashboard</li><li>Calendar-based content planning</li><li>Multi-account social media management</li><li>Self-hosted with no monthly subscription fees</li><li>Built-in queue workers for publishing workflows</li><li>Persistent storage for uploads and logs</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30350 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: Mixpost
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-03-01T00:00:00Z
       org.opencontainers.image.description: Mixpost - Self-hosted social media management platform
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: Mixpost
       org.opencontainers.image.url: https://github.com/inovector/mixpost
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 1.0.0
     title: Mixpost
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
     publisher: Sulla Labs
     short_description: Mixpost - Self-hosted social media management software (Buffer alternative).
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml
 
-  - slug: docker.io/sulla-ai/rhesis
-    version: 1.0.0
-    containerd_compatible: true
-    labels:
-      com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/rhesis.png
-      com.docker.extension.additional-urls: ""
-      com.docker.extension.categories: ai-ml,testing,developer-tools,quality-assurance
-      com.docker.extension.changelog: <h3>Recent Updates</h3><h4>1.0.0</h4><ul><li>Initial Sulla recipe</li><li>Full platform — backend, worker, frontend</li><li>60+ evaluation metrics</li><li>Adversarial red-teaming</li></ul>
-      com.docker.extension.detailed-description: Open-source LLM testing & evaluation platform.<br><br><strong>Rhesis AI</strong> helps you test, evaluate, and red-team your LLM and agentic applications with automated test generation, conversation simulation, and 60+ evaluation metrics.<br><br><strong>Features:</strong><ul><li>Automated test generation from natural language requirements</li><li>Single-turn and multi-turn conversation simulation</li><li>Adversarial red-teaming (jailbreak, prompt injection, PII leakage)</li><li>60+ evaluation metrics (RAGAS, DeepEval, Garak)</li><li>OpenTelemetry-based tracing</li><li>Bring your own LLM (OpenAI, Anthropic, Gemini, Ollama, etc.)</li><li>Team collaboration</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>6GB+ RAM recommended</li><li>Port 30360 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
-      com.docker.extension.screenshots: ""
-      dev.chainguard.image.title: Rhesis AI
-      org.opencontainers.image.authors: Sulla Labs
-      org.opencontainers.image.created: 2026-03-06T00:00:00Z
-      org.opencontainers.image.description: Rhesis AI - Open-source LLM testing, evaluation & red-teaming platform
-      org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
-      org.opencontainers.image.title: Rhesis AI
-      org.opencontainers.image.url: https://github.com/rhesis-ai/rhesis
-      org.opencontainers.image.vendor: Sulla Labs
-      org.opencontainers.image.version: 1.0.0
-    title: Rhesis AI
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/rhesis.png
-    publisher: Sulla Labs
-    short_description: Rhesis AI - Open-source LLM testing, evaluation & red-teaming platform.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/rhesis/installation.yaml
-  - slug: docker.io/sulla-ai/n8n
+  - slug: docker.io/merchantprotocol/n8n
     version: 2026.03
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
-      com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
+      com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
       com.docker.extension.additional-urls: ""
       com.docker.extension.categories: automation,workflows,integrations,ai
       com.docker.extension.changelog: <h3>Recent Updates</h3><h4>2026.03</h4><ul><li>Visual workflow automation editor</li><li>1,000+ integration nodes</li><li>MCP (Model Context Protocol) support</li><li>REST API enabled</li><li>Dedicated PostgreSQL database</li></ul>
       com.docker.extension.detailed-description: Open-source workflow automation tool with a visual node-based editor.<br><br><strong>n8n</strong> lets you connect APIs, services, and databases to automate workflows — no coding required. Build complex automations visually with 1,000+ integration nodes.<br><br><strong>Features:</strong><ul><li>Visual workflow builder with drag & drop</li><li>1,000+ integration nodes (Slack, Gmail, GitHub, etc.)</li><li>MCP (Model Context Protocol) for AI agent integration</li><li>Webhook triggers & scheduled executions</li><li>REST API for programmatic control</li><li>Credential encryption & management</li><li>Execution history & error handling</li><li>Self-hosted & private</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>2GB+ RAM recommended</li><li>Ports 30119, 30121 available</li></ul>
-      com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+      com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
       com.docker.extension.screenshots: ""
       dev.chainguard.image.title: n8n
       org.opencontainers.image.authors: Sulla Labs
       org.opencontainers.image.created: 2026-03-14T00:00:00Z
       org.opencontainers.image.description: n8n - Open-source workflow automation tool with visual node-based editor
       org.opencontainers.image.licenses: ""
-      org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+      org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
       org.opencontainers.image.title: n8n
-      org.opencontainers.image.url: https://hub.docker.com/r/sulla-ai/n8n
+      org.opencontainers.image.url: https://hub.docker.com/r/merchantprotocol/n8n
       org.opencontainers.image.vendor: Sulla Labs
       org.opencontainers.image.version: 2026.03
     title: n8n
-    logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
+    logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/n8n/n8n.svg
     publisher: Sulla Labs
     short_description: Open-source workflow automation with 1,000+ integrations. Visual node-based editor for connecting APIs, services & databases.
-    installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/n8n/installation.yaml
+    installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/n8n/installation.yaml
 

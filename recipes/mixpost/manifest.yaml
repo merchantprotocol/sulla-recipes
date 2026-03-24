@@ -1,27 +1,27 @@
-slug: docker.io/sulla-ai/mixpost
+slug: docker.io/merchantprotocol/mixpost
 version: 1.0.0
 containerd_compatible: true
 labels:
   com.docker.desktop.extension.api.version: 0.0.1
-  com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
+  com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
   com.docker.extension.additional-urls: ""
   com.docker.extension.categories: social-media,marketing,automation,productivity
   com.docker.extension.changelog: <h3>Recent Updates</h3><h4>1.0.0</h4><ul><li>Official Mixpost Lite Docker setup</li><li>MySQL and Redis included</li><li>Persistent storage for app data and logs</li></ul>
   com.docker.extension.detailed-description: Mixpost is a self-hosted social media management platform that helps you create, schedule, publish, and manage content across multiple social networks.<br><br><strong>Features:</strong><ul><li>Schedule and publish posts from one dashboard</li><li>Calendar-based content planning</li><li>Multi-account social media management</li><li>Self-hosted with no monthly subscription fees</li><li>Built-in queue workers for publishing workflows</li><li>Persistent storage for uploads and logs</li></ul><br><strong>Requirements:</strong><ul><li>Sulla Desktop v1.0.0+</li><li>4GB+ RAM recommended</li><li>Port 30350 available</li></ul>
-  com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+  com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
   com.docker.extension.screenshots: ""
   dev.chainguard.image.title: Mixpost
   org.opencontainers.image.authors: Sulla Labs
   org.opencontainers.image.created: 2026-03-01T00:00:00Z
   org.opencontainers.image.description: Mixpost - Self-hosted social media management platform
   org.opencontainers.image.licenses: ""
-  org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+  org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
   org.opencontainers.image.title: Mixpost
   org.opencontainers.image.url: https://github.com/inovector/mixpost
   org.opencontainers.image.vendor: Sulla Labs
   org.opencontainers.image.version: 1.0.0
 title: Mixpost
-logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
+logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/mixpost.svg
 publisher: Sulla Labs
 short_description: Mixpost - Self-hosted social media management software (Buffer alternative).
-installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml
+installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml

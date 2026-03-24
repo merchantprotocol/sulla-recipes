@@ -1,9 +1,9 @@
-slug: docker.io/sulla-ai/comfyui
+slug: docker.io/merchantprotocol/comfyui
 version: 1.0.0
 containerd_compatible: true
 labels:
   com.docker.desktop.extension.api.version: 0.0.1
-  com.docker.extension.icon: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/comfyui/comfyui.png
+  com.docker.extension.icon: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/comfyui/comfyui.png
   com.docker.extension.additional-urls: ""
   com.docker.extension.categories: ai,image-generation,stable-diffusion,creative
   com.docker.extension.changelog: >-
@@ -41,20 +41,20 @@ labels:
     <li>Port 30340 available</li>
     <li>Disk space for models (varies by model)</li>
     </ul>
-  com.docker.extension.publisher-url: https://github.com/sulla-ai/sulla-recipes
+  com.docker.extension.publisher-url: https://github.com/merchantprotocol/sulla-recipes
   com.docker.extension.screenshots: ""
   dev.chainguard.image.title: ComfyUI
   org.opencontainers.image.authors: Sulla Labs
   org.opencontainers.image.created: "2026-03-01T00:00:00Z"
   org.opencontainers.image.description: ComfyUI - Node-based Stable Diffusion GUI for AI image generation
   org.opencontainers.image.licenses: ""
-  org.opencontainers.image.source: https://github.com/sulla-ai/sulla-recipes
+  org.opencontainers.image.source: https://github.com/merchantprotocol/sulla-recipes
   org.opencontainers.image.title: ComfyUI
   org.opencontainers.image.url: https://github.com/comfyanonymous/ComfyUI
   org.opencontainers.image.vendor: Sulla Labs
   org.opencontainers.image.version: 1.0.0
 title: ComfyUI
-logo: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/comfyui/comfyui.png
+logo: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/comfyui/comfyui.png
 publisher: Sulla Labs
 short_description: ComfyUI - Node-based Stable Diffusion GUI for powerful AI image generation workflows.
-installable: https://raw.githubusercontent.com/sulla-ai/sulla-recipes/refs/heads/main/recipes/comfyui/installation.yaml
+installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/comfyui/installation.yaml

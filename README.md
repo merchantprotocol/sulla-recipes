@@ -1,6 +1,6 @@
 # sulla-recipes
 
-The official plugin recipes registry for [Sulla Desktop](https://github.com/sulla-ai/sulla-desktop).
+The official plugin recipes registry for [Sulla Desktop](https://github.com/merchantprotocol/sulla-desktop).
 
 Browse, install, and contribute extensions that extend Sulla's capabilities — container managers, smart home hubs, monitoring dashboards, and more.
 
