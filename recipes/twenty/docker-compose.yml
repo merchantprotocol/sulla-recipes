@@ -18,6 +18,12 @@ services:
       twenty-crm-postgres:
         condition: service_healthy
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/healthz || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
 
   twenty-crm-worker:
     image: twentycrm/twenty:latest
@@ -46,7 +52,7 @@ services:
       POSTGRES_PASSWORD: "{{sullaServicePassword}}"
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - twenty-crm-postgres-data:/var/lib/postgresql/data
+      - {{path.appdata}}/twenty-crm-postgres:/var/lib/postgresql/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U twenty"]
@@ -56,4 +62,3 @@ services:
 
 volumes:
   twenty-crm-server-data:
-  twenty-crm-postgres-data:

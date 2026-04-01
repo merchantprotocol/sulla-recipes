@@ -46,7 +46,7 @@ services:
     ports:
       - '30296:5432'
     volumes:
-      - affine-postgres-data:/var/lib/postgresql/data
+      - {{path.appdata}}/affine-postgres:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: affine
       POSTGRES_PASSWORD: '{{sullaServicePassword}}'
@@ -61,4 +61,3 @@ services:
 volumes:
   affine-storage:
   affine-config:
-  affine-postgres-data:

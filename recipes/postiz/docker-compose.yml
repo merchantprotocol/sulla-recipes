@@ -94,7 +94,7 @@ services:
       POSTGRES_USER: postiz
       POSTGRES_DB: postiz
     volumes:
-      - postiz-postgres-data:/var/lib/postgresql/data
+      - {{path.appdata}}/postiz-postgres:/var/lib/postgresql/data
     ports:
       - "30241:5432"
     networks:
@@ -137,7 +137,7 @@ services:
     expose:
       - 5432
     volumes:
-      - temporal-postgresql-data:/var/lib/postgresql/data
+      - {{path.appdata}}/temporal-postgresql:/var/lib/postgresql/data
 
   temporal:
     container_name: temporal
@@ -185,11 +185,9 @@ services:
       - '8080:8080'
 
 volumes:
-  postiz-postgres-data:
   postiz-config:
   postiz-uploads:
   temporal-elasticsearch-data:
-  temporal-postgresql-data:
 
 networks:
   postiz-network:

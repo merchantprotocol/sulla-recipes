@@ -43,7 +43,7 @@ services:
       - POSTGRES_USER=immich
       - POSTGRES_PASSWORD={{sullaServicePassword}}
     volumes:
-      - immich-postgres-data:/var/lib/postgresql/data
+      - {{path.appdata}}/immich-postgres:/var/lib/postgresql/data
     command: postgres -c 'shared_preload_libraries=vector'   # Ensures vector extension loads
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U immich"]
@@ -54,4 +54,3 @@ services:
 
 volumes:
   immich-model-cache:
-  immich-postgres-data:
