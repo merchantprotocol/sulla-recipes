@@ -43,7 +43,7 @@ services:
     environment:
       POSTGRES_DB: twenty
       POSTGRES_USER: twenty
-      POSTGRES_PASSWORD: {{sullaServicePassword}}
+      POSTGRES_PASSWORD: "{{sullaServicePassword}}"
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - twenty-crm-postgres-data:/var/lib/postgresql/data
