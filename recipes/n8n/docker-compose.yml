@@ -10,7 +10,7 @@ services:
       - POSTGRES_DB=n8n
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - {{path.appdata}}/n8n-db:/var/lib/postgresql/data
+      - n8n-db-data:/var/lib/postgresql/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U n8n -d n8n"]
@@ -80,4 +80,5 @@ services:
       - ./migrations/post-server-migration.sql:/migrations/post-server-migration.sql:ro
     entrypoint: ["sh", "-c", "until pg_isready; do sleep 2; done; psql -v ON_ERROR_STOP=1 -f /migrations/post-server-migration.sql"]
 
-volumes: {}
+volumes:
+  n8n-db-data:

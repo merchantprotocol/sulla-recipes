@@ -52,7 +52,7 @@ services:
       POSTGRES_PASSWORD: "{{sullaServicePassword}}"
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - {{path.appdata}}/twenty-crm-postgres:/var/lib/postgresql/data
+      - twenty-crm-postgres-data:/var/lib/postgresql/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U twenty"]
@@ -62,3 +62,4 @@ services:
 
 volumes:
   twenty-crm-server-data:
+  twenty-crm-postgres-data:

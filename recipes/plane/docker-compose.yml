@@ -155,7 +155,7 @@ services:
     environment:
       <<: *db-env
     volumes:
-      - {{path.appdata}}/plane-db:/var/lib/postgresql/data
+      - plane-db-data:/var/lib/postgresql/data
     ports:
       - "30271:5432"
     healthcheck:
@@ -202,6 +202,7 @@ services:
       - live
 
 volumes:
+  plane-db-data:
   plane-uploads:
   plane-logs-api:
   plane-logs-worker:
