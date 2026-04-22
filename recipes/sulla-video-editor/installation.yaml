@@ -1,0 +1,26 @@
+id: sulla-video-editor
+name: Sulla Video Editor
+description: AI-driven video editor powered by Sulla — record screencasts, transcribe with whisper, force-align to the audio, and render MP4s programmatically
+icon: sulla-video-editor.svg
+version: "2026.04"
+category: media
+
+compose:
+  composeFile: "docker-compose.yml"
+
+setup: []
+
+commands:
+  start: "docker compose -f ${COMPOSE_FILE} up -d"
+  stop: "docker compose -f ${COMPOSE_FILE} down"
+  restart: "docker compose -f ${COMPOSE_FILE} restart"
+  status: "docker compose -f ${COMPOSE_FILE} ps"
+  update: "docker compose -f ${COMPOSE_FILE} pull && docker compose -f ${COMPOSE_FILE} up -d"
+  logs: "docker compose -f ${COMPOSE_FILE} logs --tail=100"
+
+openInBrowser: true
+defaultPort: 30360
+
+extraUrls:
+  - label: "Sulla Video Editor"
+    url: "http://localhost:30360"

@@ -1,0 +1,96 @@
+name: sulla-video-editor
+
+services:
+  app:
+    image: ghcr.io/merchantprotocol/sulla-video-editor:latest
+    pull_policy: missing
+    container_name: sulla_video_editor
+    restart: unless-stopped
+    ports:
+      - "30360:80"
+    volumes:
+      - appdata:/data
+      - {{path.home}}/sulla/sulla-video-editor/captures:/data/captures
+      - {{path.home}}/sulla/sulla-video-editor/inbox:/data/inbox
+      - {{path.home}}/sulla/sulla-video-editor/projects:/data/projects
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://sulla:{{sullaServicePassword}}@db:5432/sulla_video
+      - WHISPER_MODEL_PATH=/opt/whisper-models/ggml-large-v3-turbo.bin
+      - DATA_DIR=/data
+      - CAPTURES_DIR=/data/captures
+      - INBOX_DIR=/data/inbox
+      - ALIGNER_URL=http://aligner:8765
+      - INBOX_TEMPLATE_ID=system-screencast
+      - SULLA_API_KEY=
+      - SULLA_CHAT_URL=
+      - SULLA_BEARER_TOKEN=
+      - ELEVENLABS_API_KEY=
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+      aligner:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
+
+  aligner:
+    image: ghcr.io/merchantprotocol/sulla-video-editor-aligner:latest
+    pull_policy: missing
+    container_name: sulla_video_editor_aligner
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import urllib.request,sys; urllib.request.urlopen(\"http://localhost:8765/health\", timeout=3)' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+
+  db:
+    image: postgres:16-alpine
+    container_name: sulla_video_editor_db
+    restart: unless-stopped
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=sulla_video
+      - POSTGRES_USER=sulla
+      - POSTGRES_PASSWORD={{sullaServicePassword}}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sulla -d sulla_video"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  migrate:
+    image: ghcr.io/merchantprotocol/sulla-video-editor:latest
+    pull_policy: missing
+    container_name: sulla_video_editor_migrate
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - PGHOST=db
+      - PGUSER=sulla
+      - PGPASSWORD={{sullaServicePassword}}
+      - PGDATABASE=sulla_video
+    entrypoint: >
+      sh -c '
+        for f in /var/www/html/migrations/*.sql; do
+          echo "Running migration: $$f";
+          psql -v ON_ERROR_STOP=1 -f "$$f";
+        done;
+        echo "Migrations complete";
+      '
+
+volumes:
+  pgdata:
+  appdata:
