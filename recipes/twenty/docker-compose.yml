@@ -17,7 +17,7 @@ services:
     depends_on:
       twenty-crm-postgres:
         condition: service_healthy
-    restart: unless-stopped
+    restart: "no"
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:3000/healthz || exit 1"]
       interval: 10s
@@ -39,7 +39,7 @@ services:
     depends_on:
       twenty-crm-server:
         condition: service_healthy
-    restart: unless-stopped
+    restart: "no"
 
   twenty-crm-postgres:
     image: postgres:16-alpine
@@ -53,7 +53,7 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - twenty-crm-postgres-data:/var/lib/postgresql/data
-    restart: unless-stopped
+    restart: "no"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U twenty"]
       interval: 10s
