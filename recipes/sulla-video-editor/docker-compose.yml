@@ -10,15 +10,23 @@ services:
       - "30360:80"
     volumes:
       - appdata:/data
-      - {{path.home}}/sulla/sulla-video-editor/captures:/data/captures
-      - {{path.home}}/sulla/sulla-video-editor/inbox:/data/inbox
-      - {{path.home}}/sulla/sulla-video-editor/projects:/data/projects
+      # Capture Studio recordings (~/sulla/captures), mounted live and read-write
+      # so the editor can save transcription.txt/json back into each capture
+      # folder. Kept outside /data on purpose: the image runs
+      # `chown -R www-data /data` on every start, which must never touch the
+      # user's own recordings. See the `captures` volume below.
+      - captures:/captures
+      - inbox:/data/inbox
+      - projects:/data/projects
+      # Serve the app over plain HTTP on port 80 (see nginx-http.conf). The
+      # image's start-container copies nginx.d/nginx.conf over its default site.
+      - ./nginx-http.conf:/var/www/html/nginx.d/nginx.conf:ro
     environment:
       - NODE_ENV=production
       - DATABASE_URL=postgresql://sulla:{{sullaServicePassword}}@db:5432/sulla_video
       - WHISPER_MODEL_PATH=/opt/whisper-models/ggml-large-v3-turbo.bin
       - DATA_DIR=/data
-      - CAPTURES_DIR=/data/captures
+      - CAPTURES_DIR=/captures
       - INBOX_DIR=/data/inbox
       - ALIGNER_URL=http://aligner:8765
       - INBOX_TEMPLATE_ID=system-screencast
@@ -33,12 +41,26 @@ services:
         condition: service_completed_successfully
       aligner:
         condition: service_healthy
+      captures-init:
+        condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80/health"]
       interval: 30s
       timeout: 10s
       retries: 5
       start_period: 90s
+
+  # One-shot: make sure ~/sulla/captures exists before the `captures` volume
+  # binds to it. Capture Studio only creates it on the first recording, and a
+  # bind volume fails to mount if its folder is missing.
+  captures-init:
+    image: ghcr.io/merchantprotocol/sulla-video-editor:latest
+    pull_policy: missing
+    container_name: sulla_video_editor_captures_init
+    restart: "no"
+    volumes:
+      - sulla-home:/sulla-home
+    entrypoint: ["sh", "-c", "mkdir -p /sulla-home/captures"]
 
   aligner:
     image: ghcr.io/merchantprotocol/sulla-video-editor-aligner:latest
@@ -93,4 +115,32 @@ services:
 
 volumes:
   pgdata:
+    name: sulla-sulla-video-editor-pgdata
   appdata:
+    name: sulla-sulla-video-editor-appdata
+  inbox:
+    name: sulla-sulla-video-editor-inbox
+  projects:
+    name: sulla-sulla-video-editor-projects
+  # Live bind to the folder Capture Studio records into. Declared as a local
+  # volume with bind options (not a short `host:container` bind) so Sulla
+  # Desktop's recipe runtime keeps it pointed at the real folder instead of
+  # converting it into a one-time copy. ${HOME} is interpolated by the docker
+  # compose CLI, which Sulla Desktop runs from its main process on the host,
+  # so it is the user's real home (the same path is mounted into the VM).
+  # Don't use {{path.home}} here: the DB-backed recipe runtime never renders
+  # {{...}} templates.
+  captures:
+    name: sulla-sulla-video-editor-captures
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/sulla/captures
+  sulla-home:
+    name: sulla-sulla-video-editor-sulla-home
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/sulla
