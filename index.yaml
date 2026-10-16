@@ -311,7 +311,7 @@ plugins:
     installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/home-assistant/installation.yaml
 
   - slug: docker.io/merchantprotocol/erpnext
-    version: 2026.02
+    version: "2026.02"
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
@@ -451,7 +451,7 @@ plugins:
     installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/wordpress/installation.yaml
 
   - slug: docker.io/merchantprotocol/windmill
-    version: 2026.02
+    version: "2026.02"
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
@@ -535,7 +535,7 @@ plugins:
     installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/btcpayserver/installation.yaml
 
   - slug: docker.io/merchantprotocol/remotion
-    version: 2026.02
+    version: "2026.02"
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
@@ -591,7 +591,7 @@ plugins:
     installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/mixpost/installation.yaml
 
   - slug: docker.io/merchantprotocol/n8n
-    version: 2026.03
+    version: "2026.03"
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
@@ -619,7 +619,7 @@ plugins:
     installable: https://raw.githubusercontent.com/merchantprotocol/sulla-recipes/refs/heads/main/recipes/n8n/installation.yaml
 
   - slug: docker.io/merchantprotocol/sulla-video-editor
-    version: 2026.04
+    version: "2026.04"
     containerd_compatible: true
     labels:
       com.docker.desktop.extension.api.version: 0.0.1
