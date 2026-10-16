@@ -10,9 +10,12 @@ services:
       - "30360:80"
     volumes:
       - appdata:/data
-      - {{path.home}}/sulla/sulla-video-editor/captures:/data/captures
-      - {{path.home}}/sulla/sulla-video-editor/inbox:/data/inbox
-      - {{path.home}}/sulla/sulla-video-editor/projects:/data/projects
+      # Capture Studio recordings (~/sulla/captures), mounted live and read-write.
+      # Read-write so the editor can save transcription.txt/json back into
+      # each capture folder. See the `captures` volume below.
+      - captures:/data/captures
+      - inbox:/data/inbox
+      - projects:/data/projects
     environment:
       - NODE_ENV=production
       - DATABASE_URL=postgresql://sulla:{{sullaServicePassword}}@db:5432/sulla_video
@@ -33,12 +36,26 @@ services:
         condition: service_completed_successfully
       aligner:
         condition: service_healthy
+      captures-init:
+        condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80/health"]
       interval: 30s
       timeout: 10s
       retries: 5
       start_period: 90s
+
+  # One-shot: make sure ~/sulla/captures exists before the `captures` volume
+  # binds to it. Capture Studio only creates it on the first recording, and a
+  # bind volume fails to mount if its folder is missing.
+  captures-init:
+    image: ghcr.io/merchantprotocol/sulla-video-editor:latest
+    pull_policy: missing
+    container_name: sulla_video_editor_captures_init
+    restart: "no"
+    volumes:
+      - sulla-home:/sulla-home
+    entrypoint: ["sh", "-c", "mkdir -p /sulla-home/captures"]
 
   aligner:
     image: ghcr.io/merchantprotocol/sulla-video-editor-aligner:latest
@@ -94,3 +111,25 @@ services:
 volumes:
   pgdata:
   appdata:
+  inbox:
+    name: sulla-sulla-video-editor-app-inbox
+  projects:
+    name: sulla-sulla-video-editor-app-projects
+  # Live bind to the folder Capture Studio records into. Declared as a local
+  # volume with bind options (not a short `host:container` bind) so Sulla
+  # Desktop's recipe runtime keeps it pointed at the real folder instead of
+  # converting it into a one-time copy. ${HOME} is filled in by docker compose.
+  captures:
+    name: sulla-sulla-video-editor-captures
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/sulla/captures
+  sulla-home:
+    name: sulla-sulla-video-editor-sulla-home
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/sulla
