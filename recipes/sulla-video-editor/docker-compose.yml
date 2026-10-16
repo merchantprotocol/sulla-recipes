@@ -24,7 +24,7 @@ services:
     environment:
       - NODE_ENV=production
       - DATABASE_URL=postgresql://sulla:{{sullaServicePassword}}@db:5432/sulla_video
-      - WHISPER_MODEL_PATH=/opt/whisper-models/ggml-large-v3-turbo.bin
+      - WHISPER_MODEL_PATH=/opt/whisper-models/ggml-base.en.bin
       - DATA_DIR=/data
       - CAPTURES_DIR=/captures
       - INBOX_DIR=/data/inbox
